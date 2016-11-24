@@ -5,7 +5,7 @@
 # HaCKeD File Finder
 Mencari halaman atau file yang di HaCKeD/Defaced (txt, htm, html etc)
 
-tools ini akan membantu anda dalam pencarian string yang berada dalam file-file website anda (*.php, *.js, *.txt, *.htm, *.html) <br>
+Tools ini akan membantu anda dalam pencarian string yang berada dalam file-file website anda (*.php, *.js, *.txt, *.htm, *.html) <br>
 Cukup dengan meletakkan file "FindHackedFiles.php" pada direktori "public_html", ketik string yang akan dicari (misal: "HaCKeD") lalu biarkan tools ini mencari file/s yang di defaced/hacked.
 
 <p>&nbsp;</p>
@@ -15,6 +15,6 @@ Cukup dengan meletakkan file "FindHackedFiles.php" pada direktori "public_html",
 Find the HaCKeD or Defaced Files (txt, htm, html etc)
 
 This tool will help you to search any string in any files of your website (*.php, *.js, *.txt, *.htm, *.html) <br>
-Just put "FindHackedFiles.php" in your "public_html" directory, type the string to search (e.g. "HaCKeD") and let it search the defaced/hacked file/s
+Just put "FindHackedFiles.php" in your "public_html" directory, type the string to search (e.g. "HaCKeD") and let this tools search the defaced/hacked file/s
 
 
