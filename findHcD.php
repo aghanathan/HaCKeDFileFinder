@@ -34,6 +34,7 @@
 								
 								$finfo = perms($scanf);
 								$arrMalCodes[] = array(
+									'fpath' => $path,
 									'fname' => basename($scanf),
 									'fsize' => $fsize, 
 									'finfo' => $finfo,
@@ -79,6 +80,9 @@
 		$info .= (($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x' ) : (($perms & 0x0200) ? 'T' : '-'));
 		return $info;
 	}
+	
+	if ( isset($_GET['filesrc'] ) ) $filetxt = '<pre>'.htmlspecialchars(file_get_contents($_GET['filesrc'])).'</pre>';
+	
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -95,7 +99,7 @@
 		text-shadow:0px 0px 10px #fff;
 	}
 	
-	input, table, tr, td {
+	input, table, tr, td, pre {
 		font-size:10pt;
 		color:#fff;
 		font-family:Courier New, Courier, monospace;
@@ -225,9 +229,9 @@
 				<?php 
 					foreach ( $arrMalCodes as $key => $value ) {
 						echo "<tr>
-							<td><a href=".basename($value[fname])." target='_blank'>".basename($value[fname])."</a></td>
-							<td><center>".$value[fsize]."</center></td>
-							<td><center><span style='color:#009900;'>".$value[finfo]."</span></center></td>
+							<td><a href=?filesrc={$value[fpath]}>".basename($value[fname])."</a></td>
+					<td><center>{$value[fsize]}</center></td>
+					<td><center><span style='color:#009900;'>{$value[finfo]}</span></center></td>
 						</tr>";
 					}
 				?>
@@ -240,5 +244,7 @@
 		</td>
 	</tr>
 </table>
+<p>&nbsp;</p>
+<?php echo $filetxt; ?>
 </body>
 </html>
