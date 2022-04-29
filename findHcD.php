@@ -101,7 +101,7 @@
 	
 	input, table, tr, td, pre {
 		font-size:10pt;
-		color:#fff;
+		color:#000;
 		font-family:Courier New, Courier, monospace;
 		text-shadow:0px 0px 10px #fff;
 	}
