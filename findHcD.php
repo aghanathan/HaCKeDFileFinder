@@ -99,9 +99,9 @@
 		text-shadow:0px 0px 10px #fff;
 	}
 	
-	input, table, tr, td, pre {
+	table, tr, td, pre {
 		font-size:10pt;
-		color:#000;
+		color:#fff;
 		font-family:Courier New, Courier, monospace;
 		text-shadow:0px 0px 10px #fff;
 	}
